@@ -34,13 +34,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LauncherActivityInfoAdapter extends BaseAdapter {
-    private static final String TAG = "LauncherActivityInfoAdapter";
-
     private final List<LauncherActivityInfo> apps = new ArrayList<>();
     private LauncherApps launcher;
 
     public void init(Context context) {
-        String className = context.getClass().getCanonicalName();
+        final String className = context.getClass().getCanonicalName();
 
         launcher = (LauncherApps) context.getSystemService(LAUNCHER_APPS_SERVICE);
         apps.clear();
@@ -54,12 +52,12 @@ public class LauncherActivityInfoAdapter extends BaseAdapter {
     }
 
     public void launch(int position) {
-        LauncherActivityInfo app = apps.get(position);
+        final LauncherActivityInfo app = apps.get(position);
         launcher.startMainActivity(app.getComponentName(), app.getUser(), null, Bundle.EMPTY);
     }
 
     public boolean launchAppDetails(int position) {
-        LauncherActivityInfo app = apps.get(position);
+        final LauncherActivityInfo app = apps.get(position);
         launcher.startAppDetailsActivity(app.getComponentName(), app.getUser(), null, Bundle.EMPTY);
         return true;
     }

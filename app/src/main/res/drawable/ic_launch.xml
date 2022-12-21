@@ -1,7 +1,6 @@
 <!--
   ~ Copyright 2015-2017 Hayai Software
   ~ Copyright 2018-2022 The KeikaiLauncher Project
-  ~ Copyright 2022 MasterRiceBall
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
   ~ in compliance with the License. You may obtain a copy of the License at
@@ -13,12 +12,15 @@
   ~ either express or implied. See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<!-- TODO: Fix wallpaper -->
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
-    <style name="AppBaseTheme" parent="@android:style/Theme.Material.NoActionBar">
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
-    </style>
-</resources>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+  <path
+      android:pathData="M7,9L7,14C7,14 4,16 4,19L4,20L8,20L10,23L14,23L16,20L20,20L20,19C20,16 17,14 17,14L17,9C17,5 14,1 12,1C10,1 7,5 7,9ZM8,20L16,20M12,9C12.552,9 13,8.552 13,8C13,7.448 12.552,7 12,7C11.448,7 11,7.448 11,8C11,8.552 11.448,9 12,9Z"
+      android:strokeWidth="2"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+</vector>

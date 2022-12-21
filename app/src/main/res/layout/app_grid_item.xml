@@ -17,17 +17,16 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/app_row_column_height"
-    android:orientation="vertical">
+    android:layout_height="@dimen/app_row_column_height">
 
     <ImageView
         android:id="@+id/appIcon"
         android:layout_width="@dimen/app_icon_size"
         android:layout_height="@dimen/app_icon_size"
         android:layout_gravity="center_horizontal"
-        android:contentDescription="."
+        android:contentDescription=""
         android:src="@android:mipmap/sym_def_app_icon"
-        tools:ignore="HardcodedText" />
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/appLabel"
@@ -38,12 +37,6 @@
         android:ellipsize="end"
         android:gravity="center_horizontal"
         android:maxLines="2"
-        android:padding="0dp"
-        android:shadowColor="#000000"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="1.2"
         android:textColor="#FFFFFF"
-        android:textIsSelectable="false"
         android:textSize="@dimen/app_icon_label_size" />
 </FrameLayout>

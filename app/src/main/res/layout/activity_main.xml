@@ -14,27 +14,20 @@
   ~ limitations under the License.
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appsContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="@dimen/activity_horizontal_margin"
-    android:layout_marginTop="@dimen/activity_vertical_margin"
-    android:layout_marginRight="@dimen/activity_horizontal_margin"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical">
 
-    <GridView
-        android:id="@+id/appsContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:choiceMode="singleChoice"
-        android:clipToPadding="false"
-        android:columnWidth="@dimen/app_row_column_width"
-        android:horizontalSpacing="@dimen/app_row_horizontal_spacing"
-        android:numColumns="auto_fit"
-        android:overScrollMode="never"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:scrollbars="none"
-        android:stretchMode="spacingWidth"
-        android:verticalSpacing="@dimen/app_row_vertical_spacing" />
-</LinearLayout>
+    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+
+    android:choiceMode="singleChoice"
+    android:columnWidth="@dimen/app_row_column_width"
+    android:horizontalSpacing="@dimen/app_row_horizontal_spacing"
+    android:numColumns="auto_fit"
+    android:overScrollMode="never"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="none"
+    android:stretchMode="spacingWidth"
+    android:verticalSpacing="@dimen/app_row_vertical_spacing" />
