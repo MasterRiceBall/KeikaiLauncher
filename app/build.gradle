@@ -21,17 +21,13 @@ version "1.2.3-SNAPSHOT"
 android {
     compileSdkVersion 33
     defaultConfig {
-        applicationId 'com.anpmech.launcher'
-        minSdkVersion 15
+        applicationId 'com.masterriceball.launcher'
+        minSdkVersion 27
         targetSdkVersion 33
         versionName "1.2.3-SNAPSHOT"
         versionCode 10203
     }
     buildTypes {
-        all {
-            buildConfigField("String", "GITHUB_USER", "\"KeikaiLauncher\"")
-            buildConfigField("String", "GITHUB_PROJECT", "\"KeikaiLauncher\"")
-        }
         release {
             minifyEnabled true
             shrinkResources true

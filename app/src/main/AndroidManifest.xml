@@ -19,13 +19,7 @@
     <uses-permission
         android:name="android.permission.QUERY_ALL_PACKAGES"
         tools:ignore="QueryAllPackagesPermission" />
-    <!--
-    ~ This permission completely optional and set in the system settings menus. The following
-    ~ declares intention to use, if available and granted.
-    -->
-    <uses-permission
-        android:name="android.permission.PACKAGE_USAGE_STATS"
-        tools:ignore="ProtectedPermissions" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -33,15 +27,18 @@
         android:resizeableActivity="true"
         android:theme="@style/AppBaseTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning"
-        tools:targetApi="n">
+        >
 
         <activity
-            android:name="com.anpmech.launcher.activities.SearchActivity"
+            android:name="com.anpmech.launcher.activities.MainActivity"
             android:alwaysRetainTaskState="true"
             android:exported="true"
             android:label="@string/title_activity_search"
             android:launchMode="singleTask"
-            android:windowSoftInputMode="stateHidden|adjustResize">
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.ASSIST" />
@@ -51,19 +48,5 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name="com.anpmech.launcher.activities.SettingsActivity"
-            android:label="@string/title_activity_settings"
-            android:theme="@style/AppSettingsTheme" />
-
-        <activity
-            android:name=".activities.AboutActivity"
-            android:label="@string/about_header"
-            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
-
-        <receiver
-            android:name=".monitor.PackageChangedReceiver"
-            android:enabled="false" />
     </application>
 </manifest>

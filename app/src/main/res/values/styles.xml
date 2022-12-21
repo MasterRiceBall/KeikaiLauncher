@@ -14,50 +14,9 @@
   -->
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
-        <item name="android:windowBackground">@color/full_transparent</item>
-        <item name="android:windowShowWallpaper">true</item>
-
+    <style name="AppBaseTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">#9e9e9e</item>
+        <item name="android:colorPrimaryDark">#616161</item>
+        <item name="android:windowBackground">#000000</item>
     </style>
-
-    <style name="AppSettingsTheme" parent="@android:style/Theme.Holo.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
-        19
-    </style>
-
-    <!-- use this style for a text view that is a caption to a paragraph of text -->
-    <style name="CaptionTextBase">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingTop">16dp</item>
-        <item name="android:paddingBottom">4dp</item>
-        <item name="android:textAppearance">@android:style/TextAppearance.DeviceDefault.Medium
-        </item>
-        <item name="android:textColor">?android:attr/textColorSecondary</item>
-    </style>
-
-    <style name="CaptionText" parent="CaptionTextBase" />
-
-    <!-- use this style for a text views that is a paragraph of text -->
-    <style name="BodyTextBase">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textAppearance">@android:style/TextAppearance.DeviceDefault.Small</item>
-    </style>
-
-    <style name="BodyText" parent="BodyTextBase" />
 </resources>
