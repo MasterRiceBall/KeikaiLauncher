@@ -25,12 +25,10 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:resizeableActivity="true"
-        android:theme="@style/AppBaseTheme"
-        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
-        >
+        android:theme="@style/AppBaseTheme" >
 
         <activity
-            android:name="com.anpmech.launcher.activities.MainActivity"
+            android:name="com.masterriceball.launcher.MainActivity"
             android:alwaysRetainTaskState="true"
             android:exported="true"
             android:label="@string/title_activity_search"
