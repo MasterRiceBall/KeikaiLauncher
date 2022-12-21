@@ -5,6 +5,9 @@
       height="80">](https://f-droid.org/app/com.masterriceball.launcher)
 
 *A fork of HayaiLauncher*
+*A stripped down version of KeikaiLauncher*
+
+This is not for everyone. The launcher is bare minimal in size and functionality.
 
 It is a fast, [free](https://en.wikipedia.org/wiki/Free_software), minimalist Android Launcher. Even though this fork is
 heavily modified this launcher is a tribute to the ideas and concepts of HayaiLauncher.
