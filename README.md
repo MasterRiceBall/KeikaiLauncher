@@ -7,54 +7,10 @@
 *A fork of HayaiLauncher*
 *A stripped down version of KeikaiLauncher*
 
-This is not for everyone. The launcher is bare minimal in size and functionality.
+This fork is not for most people. The launcher has bare mininal functionality for code simpicity and tiny size.
 
-It is a fast, [free](https://en.wikipedia.org/wiki/Free_software), minimalist Android Launcher. Even though this fork is
-heavily modified this launcher is a tribute to the ideas and concepts of HayaiLauncher.
+It is a fast, [free](https://en.wikipedia.org/wiki/Free_software), minimalist Android Launcher. Even though this fork is heavily modified this launcher is a tribute to the ideas and concepts of HayaiLauncher.
 
-## Changes from mainline
-
-See [CHANGELOG](CHANGELOG.md).
-
-## Download
-
-Install it from [f-droid repository](https://f-droid.org/app/com.masterriceball.launcher).
-
-## Screenshots
-
-<table style="width:100%">
-<tr>
-<th>
-<a href="https://user-images.githubusercontent.com/396546/27193525-faef906e-51b3-11e7-8a44-56f66307156e.png">
-<img alt="Nexus 6P Portrait" width="30%" 
-    src="https://user-images.githubusercontent.com/396546/27193525-faef906e-51b3-11e7-8a44-56f66307156e.png">
-</a>
-</th>
-<th>
-
-<a href="https://user-images.githubusercontent.com/396546/27193524-faec6678-51b3-11e7-9510-b84700823e42.png">
-<img alt="Nexus 6P Landscape" width="40%"
-    src="https://user-images.githubusercontent.com/396546/27193524-faec6678-51b3-11e7-9510-b84700823e42.png">
-</a></th></tr>
-<td align="center">
-    Nexus 6P (Landscape)
-</td><td align="center">
-    Nexus 6P (Portrait)
-</td>
-
-
-</table>
-
-## Development 
-
-### Branching model
-
-* [main](https://github.com/KeikaiLauncher/KeikaiLauncher) - This branch has commits considered finished and stable.
-* [next](https://github.com/KeikaiLauncher/KeikaiLauncher/tree/next) - This branch has commits which are unfinished,
-  under development and potentially unstable. This branch gets force merged all the time, so, the git commit structures
-  will never be stable.
-* [hacks](https://github.com/KeikaiLauncher/KeikaiLauncher/tree/hacks) - This branch is upstream of the 'next' branch,
-  it includes commits which will never be part of _main_, but might be considered pretty useful.
 
 ### Releasing a new version
 
